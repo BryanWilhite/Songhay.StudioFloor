@@ -62,16 +62,16 @@
       <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net451\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net451\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\SonghayCore.1.6.6\lib\net452\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Songhay, Version=2.0.0.25163, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net451\Songhay.dll</HintPath>
+    <Reference Include="Songhay, Version=2.0.0.27167, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SonghayCore.1.6.6\lib\net452\Songhay.dll</HintPath>
     </Reference>
     <Reference Include="Songhay.Mvvm, Version=1.0.0.25696, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net451\Songhay.Mvvm.dll</HintPath>
     </Reference>
-    <Reference Include="SonghayCore, Version=1.0.0.25167, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net451\SonghayCore.dll</HintPath>
+    <Reference Include="SonghayCore, Version=1.0.0.27168, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SonghayCore.1.6.6\lib\net452\SonghayCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
