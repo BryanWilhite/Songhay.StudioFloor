@@ -1,9 +1,25 @@
 ﻿<Application x:Class="Songhay.StudioFloor.Desktop.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Songhay.StudioFloor.Desktop"
-             StartupUri="MainWindow.xaml">
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Songhay.StudioFloor.Desktop">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/Songhay.Mvvm;component/Resources/ColorDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Songhay.Mvvm;component/Resources/FontAwesomePathStyleDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Songhay.Mvvm;component/Resources/PathStyleDictionary.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/Songhay.StudioFloor.Desktop.Common;component/Resources/FontAwesomePathStyleDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Songhay.StudioFloor.Desktop.Common;component/Resources/TemplateDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Songhay.StudioFloor.Desktop.Common;component/Resources/StylesDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

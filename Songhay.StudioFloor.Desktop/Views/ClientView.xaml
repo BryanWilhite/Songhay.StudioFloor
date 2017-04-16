@@ -1,0 +1,74 @@
+﻿<mah:MetroWindow x:Class="Songhay.StudioFloor.Desktop.Views.ClientView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:prism="http://www.codeplex.com/prism"
+    xmlns:rxSharedModels="clr-namespace:Songhay.StudioFloor.Shared.Models;assembly=Songhay.StudioFloor.Shared"
+    Icon="/Songhay.StudioFloor.Desktop;component/songhay.ico"
+    MinWidth="{x:Static rxSharedModels:AppScalars.ClientMinWidth}" MinHeight="{x:Static rxSharedModels:AppScalars.ClientMinHeight}"
+    ResizeMode="CanResizeWithGrip"
+    Title="Songhay Studio Floor"
+    WindowTitleBrush="{DynamicResource AkyinkyinDarkBrush}">
+    <mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <Button
+                Command="{Binding ClientContentRegionNavigation.NavigationCommand}"
+                CommandParameter="AboutView"
+                Content="about…"
+                />
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85*" />
+            <ColumnDefinition Width="15*" />
+        </Grid.ColumnDefinitions>
+        <Path Grid.ColumnSpan="2"
+            Fill="{StaticResource AkyinkyinDarkBrush}"
+            Height="360"
+            HorizontalAlignment="Right" VerticalAlignment="Bottom"
+            Margin="0,0,32,16" Opacity=".7"
+            Style="{DynamicResource CubePathStyle}"
+            />
+        <ContentControl Grid.Column="0" prism:RegionManager.RegionName="{x:Static rxSharedModels:RegionNames.ClientContentRegion}" />
+        <StackPanel Grid.Column="1">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MetroCircleButtonStyle}">
+                    <Setter Property="Cursor" Value="Hand" />
+                    <Setter Property="Foreground" Value="{StaticResource AkyinkyinDarkBrush}" />
+                    <Setter Property="Height" Value="96" />
+                    <Setter Property="Margin" Value="0,8" />
+                    <Setter Property="Width" Value="96" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource AkyinkyinLightBrush}" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                </Style>
+            </StackPanel.Resources>
+            <Button
+                Command="{Binding ClientContentRegionNavigation.NavigationCommand}"
+                CommandParameter="back"
+                IsEnabled="{Binding ClientContentRegionNavigation.CanGoBack}">
+                <Path
+                    Fill="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type Button}}, Mode=OneWay}"
+                    Style="{StaticResource ArrowCircleLeftPathStyle}"
+                    />
+            </Button>
+            <Button
+                Command="{Binding ClientContentRegionNavigation.NavigationCommand}"
+                CommandParameter="forward"
+                IsEnabled="{Binding ClientContentRegionNavigation.CanGoForward}">
+                <Path
+                    Fill="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type Button}}, Mode=OneWay}"
+                    Style="{StaticResource ArrowCircleRightPathStyle}"
+                    />
+            </Button>
+        </StackPanel>
+    </Grid>
+</mah:MetroWindow>

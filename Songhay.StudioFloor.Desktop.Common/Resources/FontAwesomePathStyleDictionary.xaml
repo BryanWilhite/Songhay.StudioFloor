@@ -1,0 +1,10 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="CubePathStyle" TargetType="{x:Type Path}" BasedOn="{StaticResource BaseVFlipPathStyle}">
+        <!-- FontAwesome &#xf1b2; fa-cube -->
+        <!-- http://fontawesome.io/icons/fa-cube -->
+        <Setter Property="Data" Value="M896 -93l640 349v636l-640 -233v-752zM832 772l698 254l-698 254l-698 -254zM1664 1024v-768q0 -35 -18 -65t-49 -47l-704 -384q-28 -16 -61 -16t-61 16l-704 384q-31 17 -49 47t-18 65v768q0 40 23 73t61 47l704 256q22 8 44 8t44 -8l704 -256q38 -14 61 -47t23 -73z" />
+        <Setter Property="Stretch" Value="Uniform" />
+    </Style>
+</ResourceDictionary>

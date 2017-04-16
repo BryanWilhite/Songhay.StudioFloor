@@ -1,0 +1,17 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:coreModels="clr-namespace:Songhay.Models;assembly=SonghayCore"
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls">
+    <DataTemplate x:Key="IndexItemTemplate" DataType="coreModels:DisplayItemModel">
+        <mah:Tile
+            Command="{Binding DataContext.ClientContentRegionNavigation.NavigationCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}"
+            CommandParameter="{Binding ResourceIndicator.OriginalString}"
+            Title="{Binding DisplayText}"
+            ToolTip="{Binding Description}">
+        </mah:Tile>
+    </DataTemplate>
+    <ItemsPanelTemplate x:Key="IndexItemsPanel">
+        <WrapPanel />
+    </ItemsPanelTemplate>
+</ResourceDictionary>
