@@ -1,6 +1,4 @@
-﻿using Prism.Mvvm;
-using Songhay.Mvvm.Extensions;
-using Songhay.StudioFloor.Shared.Models;
+﻿using Songhay.StudioFloor.Shared.Models;
 using System;
 using System.Windows;
 using System.Windows.Threading;
@@ -27,8 +25,6 @@ namespace Songhay.StudioFloor.Desktop
 
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
             Application.Current.DispatcherUnhandledException += Current_DispatcherUnhandledException;
-
-            ViewModelLocationProvider.SetDefaultViewTypeToViewModelTypeResolver(viewType => viewType.GetDefaultViewTypeForViewModelTypeResolver());
 
             var bootstrapper = new ClientBootstrapper();
             bootstrapper.Run();

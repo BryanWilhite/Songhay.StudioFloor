@@ -1,11 +1,9 @@
-﻿using Prism.Mef.Modularity;
-using Prism.Modularity;
+﻿using Prism.Modularity;
 using Songhay.Models;
 using System;
 
 namespace Songhay.StudioFloor.Desktop.Modules
 {
-    [ModuleExport("AnalogDigitModule", typeof(IModule))]
     public class AnalogDigitModule : DisplayItemModel, IModule
     {
         public AnalogDigitModule()

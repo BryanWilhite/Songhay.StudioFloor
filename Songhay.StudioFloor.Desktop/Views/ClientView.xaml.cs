@@ -1,14 +1,11 @@
 ﻿using MahApps.Metro.Controls;
-using Prism.Mvvm;
 using Songhay.Mvvm.Models;
-using System.ComponentModel.Composition;
 
 namespace Songhay.StudioFloor.Desktop.Views
 {
     /// <summary>
     /// Client View
     /// </summary>
-    [Export(typeof(ClientView))]
     public partial class ClientView : MetroWindow, IView
     {
         /// <summary>
@@ -17,7 +14,6 @@ namespace Songhay.StudioFloor.Desktop.Views
         public ClientView()
         {
             this.InitializeComponent();
-            ViewModelLocator.SetAutoWireViewModel(this, true);
         }
     }
 }

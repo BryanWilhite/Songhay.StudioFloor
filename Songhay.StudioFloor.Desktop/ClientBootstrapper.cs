@@ -1,64 +1,60 @@
-﻿using Prism.Mef;
+﻿using Microsoft.Practices.Unity;
+using Prism.Modularity;
 using Prism.Regions;
+using Prism.Unity;
 using Songhay.Extensions;
 using Songhay.StudioFloor.Desktop.Modules;
 using Songhay.StudioFloor.Desktop.Views;
 using Songhay.StudioFloor.Shared.Models;
-using Songhay.StudioFloor.Shared.Services;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.Composition.Hosting;
-using System.ComponentModel.Composition.Registration;
 using System.Windows;
 
 namespace Songhay.StudioFloor.Desktop
 {
-    public class ClientBootstrapper : MefBootstrapper
+    public class ClientBootstrapper : UnityBootstrapper
     {
-        internal CompositionContainer GetCompositionContainer()
+        protected override void ConfigureModuleCatalog()
         {
-            return this.Container;
-        }
+            var catalog = this.ModuleCatalog as ModuleCatalog;
 
-        protected override void ConfigureAggregateCatalog()
-        {
-            #region builders:
+            //#region builders:
 
-            var rflContextForRest = new RegistrationBuilder();
-            rflContextForRest
-                .ForTypesDerivedFrom<IRestModelContextService>()
-                .Export<IRestModelContextService>();
+            //var rflContextForRest = new RegistrationBuilder();
+            //rflContextForRest
+            //    .ForTypesDerivedFrom<IRestModelContextService>()
+            //    .Export<IRestModelContextService>();
 
-            #endregion
+            //#endregion
 
-            var catalogs = new List<AssemblyCatalog> {
-                new AssemblyCatalog(this.GetType().Assembly),
-                //new AssemblyCatalog(typeof(RestModelContextModule).Assembly, rflContextForRest),
-                //new AssemblyCatalog(typeof(RestWeatherModule).Assembly),
-                new AssemblyCatalog(typeof(AnalogDigitModule).Assembly),
-                //new AssemblyCatalog(typeof(ExceptionsModule).Assembly),
-                //new AssemblyCatalog(typeof(KennyYoungFluidMoveModule).Assembly),
-                //new AssemblyCatalog(typeof(ODataWeatherModule).Assembly),
-                //new AssemblyCatalog(typeof(PackedXamlModule).Assembly),
-                //new AssemblyCatalog(typeof(SvgFontsModule).Assembly),
-                //new AssemblyCatalog(typeof(ValidationModule).Assembly),
+            var moduleTypes = new List<Type> {
+                typeof(ClientModule),
+                //typeof(RestModelContextModule),
+                //typeof(RestWeatherModule),
+                typeof(AnalogDigitModule),
+                //typeof(ExceptionsModule),
+                //typeof(KennyYoungFluidMoveModule),
+                //typeof(ODataWeatherModule),
+                //typeof(PackedXamlModule),
+                //typeof(SvgFontsModule),
+                //typeof(ValidationModule),
             };
 
-            catalogs.ForEachInEnumerable(i => this.AggregateCatalog.Catalogs.Add(i));
+            moduleTypes.ForEachInEnumerable(i => catalog.AddModule(i));
         }
 
         protected override DependencyObject CreateShell()
         {
             if (!FrameworkDispatcherUtility.HasCurrentWindowsApplication()) return null;
-            return this.Container.GetExportedValue<ClientView>();
+            return this.Container.Resolve<ClientView>();
         }
 
         protected override void InitializeModules()
         {
             base.InitializeModules();
 
-            var regionManager = this.Container.GetExportedValue<IRegionManager>();
-            regionManager.RequestNavigate(RegionNames.ClientContentRegion, new Uri(typeof(Views.IndexView).Name, UriKind.Relative));
+            var regionManager = this.Container.Resolve<IRegionManager>();
+            regionManager.RequestNavigate(RegionNames.ClientContentRegion, new Uri(typeof(IndexView).Name, UriKind.Relative));
         }
 
         protected override void InitializeShell()

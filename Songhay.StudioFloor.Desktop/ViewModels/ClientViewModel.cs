@@ -10,7 +10,6 @@ using System.Linq;
 
 namespace Songhay.StudioFloor.Desktop.ViewModels
 {
-
     public class ClientViewModel : BindableBase
     {
         public ClientViewModel()
