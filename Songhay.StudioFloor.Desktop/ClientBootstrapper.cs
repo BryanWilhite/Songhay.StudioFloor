@@ -1,6 +1,7 @@
 ﻿using Microsoft.Practices.Prism.MefExtensions;
 using Microsoft.Practices.Prism.Regions;
 using Songhay.Extensions;
+using Songhay.StudioFloor.Desktop.Modules;
 using Songhay.StudioFloor.Desktop.Views;
 using Songhay.StudioFloor.Shared.Models;
 using Songhay.StudioFloor.Shared.Services;
@@ -34,7 +35,7 @@ namespace Songhay.StudioFloor.Desktop
                 new AssemblyCatalog(this.GetType().Assembly),
                 //new AssemblyCatalog(typeof(RestModelContextModule).Assembly, rflContextForRest),
                 //new AssemblyCatalog(typeof(RestWeatherModule).Assembly),
-                //new AssemblyCatalog(typeof(AnalogDigitModule).Assembly),
+                new AssemblyCatalog(typeof(AnalogDigitModule).Assembly),
                 //new AssemblyCatalog(typeof(ExceptionsModule).Assembly),
                 //new AssemblyCatalog(typeof(KennyYoungFluidMoveModule).Assembly),
                 //new AssemblyCatalog(typeof(ODataWeatherModule).Assembly),
