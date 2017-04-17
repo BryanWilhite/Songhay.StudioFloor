@@ -39,28 +39,28 @@
       <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.Composition, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.Prism.Composition.dll</HintPath>
+      <HintPath>..\packages\Prism.Composition.5.0.0\lib\NET45\Microsoft.Practices.Prism.Composition.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.Interactivity, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
+      <HintPath>..\packages\Prism.Interactivity.5.0.0\lib\NET45\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.MefExtensions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Prism.MEFExtensions.5.0.0\lib\NET45\Microsoft.Practices.Prism.MefExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.Mvvm, Version=1.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.Prism.Mvvm.dll</HintPath>
+      <HintPath>..\packages\Prism.Mvvm.1.1.1\lib\net45\Microsoft.Practices.Prism.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.Mvvm.Desktop, Version=1.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.Prism.Mvvm.Desktop.dll</HintPath>
+      <HintPath>..\packages\Prism.Mvvm.1.1.1\lib\net45\Microsoft.Practices.Prism.Mvvm.Desktop.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.PubSubEvents, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+      <HintPath>..\packages\Prism.PubSubEvents.1.1.2\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.SharedInterfaces, Version=1.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.Prism.SharedInterfaces.dll</HintPath>
+      <HintPath>..\packages\Prism.Mvvm.1.1.1\lib\net45\Microsoft.Practices.Prism.SharedInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Mvvm.1.0.2\lib\net461\Newtonsoft.Json.dll</HintPath>
@@ -163,6 +163,10 @@
     <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Common\Songhay.StudioFloor.Desktop.Common.csproj">
       <Project>{229f22bc-03be-4888-888a-c99168ab897f}</Project>
       <Name>Songhay.StudioFloor.Desktop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.AnalogDigit\Songhay.StudioFloor.Desktop.Modules.AnalogDigit.csproj">
+      <Project>{82d3b021-2e38-42c2-a1b9-86bbec1e53f5}</Project>
+      <Name>Songhay.StudioFloor.Desktop.Modules.AnalogDigit</Name>
     </ProjectReference>
     <ProjectReference Include="..\Songhay.StudioFloor.Shared\Songhay.StudioFloor.Shared.csproj">
       <Project>{84711e39-cb10-4758-9f52-d34878776281}</Project>

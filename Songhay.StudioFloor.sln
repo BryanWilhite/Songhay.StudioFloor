@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Shared"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Common", "Songhay.StudioFloor.Desktop.Common\Songhay.StudioFloor.Desktop.Common.csproj", "{229F22BC-03BE-4888-888A-C99168AB897F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Modules.AnalogDigit", "Songhay.StudioFloor.Desktop.Modules.AnalogDigit\Songhay.StudioFloor.Desktop.Modules.AnalogDigit.csproj", "{82D3B021-2E38-42C2-A1B9-86BBEC1E53F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{229F22BC-03BE-4888-888A-C99168AB897F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{229F22BC-03BE-4888-888A-C99168AB897F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{229F22BC-03BE-4888-888A-C99168AB897F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D3B021-2E38-42C2-A1B9-86BBEC1E53F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D3B021-2E38-42C2-A1B9-86BBEC1E53F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D3B021-2E38-42C2-A1B9-86BBEC1E53F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D3B021-2E38-42C2-A1B9-86BBEC1E53F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
