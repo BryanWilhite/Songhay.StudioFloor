@@ -1,4 +1,4 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
+﻿using Prism.Mvvm;
 using Songhay.Mvvm.Extensions;
 using Songhay.StudioFloor.Shared.Models;
 using System;

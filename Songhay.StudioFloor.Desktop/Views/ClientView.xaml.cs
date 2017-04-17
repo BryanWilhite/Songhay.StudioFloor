@@ -1,5 +1,6 @@
 ﻿using MahApps.Metro.Controls;
-using Microsoft.Practices.Prism.Mvvm;
+using Prism.Mvvm;
+using Songhay.Mvvm.Models;
 using System.ComponentModel.Composition;
 
 namespace Songhay.StudioFloor.Desktop.Views

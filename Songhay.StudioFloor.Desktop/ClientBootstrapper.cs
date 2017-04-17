@@ -1,5 +1,5 @@
-﻿using Microsoft.Practices.Prism.MefExtensions;
-using Microsoft.Practices.Prism.Regions;
+﻿using Prism.Mef;
+using Prism.Regions;
 using Songhay.Extensions;
 using Songhay.StudioFloor.Desktop.Modules;
 using Songhay.StudioFloor.Desktop.Views;

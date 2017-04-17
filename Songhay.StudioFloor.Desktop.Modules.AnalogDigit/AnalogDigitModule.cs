@@ -1,9 +1,7 @@
-﻿using Microsoft.Practices.Prism.MefExtensions.Modularity;
-using Microsoft.Practices.Prism.Modularity;
-using Microsoft.Practices.Prism.Regions;
+﻿using Prism.Mef.Modularity;
+using Prism.Modularity;
 using Songhay.Models;
 using System;
-using System.ComponentModel.Composition;
 
 namespace Songhay.StudioFloor.Desktop.Modules
 {

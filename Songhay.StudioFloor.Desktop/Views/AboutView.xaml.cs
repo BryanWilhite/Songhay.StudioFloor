@@ -1,4 +1,4 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
+﻿using Songhay.Mvvm.Models;
 using Songhay.Mvvm.ViewModels;
 using System.ComponentModel.Composition;
 using System.Reflection;

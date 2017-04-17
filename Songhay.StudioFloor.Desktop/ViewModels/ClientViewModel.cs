@@ -1,7 +1,7 @@
-﻿using Microsoft.Practices.Prism.Modularity;
-using Microsoft.Practices.Prism.Mvvm;
-using Microsoft.Practices.Prism.Regions;
-using Microsoft.Practices.ServiceLocation;
+﻿using Microsoft.Practices.ServiceLocation;
+using Prism.Modularity;
+using Prism.Mvvm;
+using Prism.Regions;
 using Songhay.Models;
 using Songhay.Mvvm.ViewModels;
 using Songhay.StudioFloor.Desktop.Common.Extensions;
