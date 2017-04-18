@@ -1,16 +1,20 @@
-﻿using Prism.Events;
+﻿using Microsoft.Practices.Unity;
+using Prism.Events;
 using Prism.Modularity;
+using Prism.Unity;
 using Songhay.Models;
 using Songhay.StudioFloor.Desktop.Common.Events;
+using Songhay.StudioFloor.Desktop.Modules.AnalogDigit.Views;
 using System;
 
 namespace Songhay.StudioFloor.Desktop.Modules
 {
     public class AnalogDigitModule : DisplayItemModel, IModule
     {
-        public AnalogDigitModule(IEventAggregator eventAggregator)
+        public AnalogDigitModule(IUnityContainer container, IEventAggregator eventAggregator)
         {
             this._eventAggregator = eventAggregator;
+            this._container = container;
 
             this.Description = "The Analog Digit Control sample.";
             this.DisplayText = "Songhay Analog Digit";
@@ -20,9 +24,12 @@ namespace Songhay.StudioFloor.Desktop.Modules
 
         public void Initialize()
         {
+            this._container.RegisterTypeForNavigation<AnalogDigitView>();
+
             this._eventAggregator.GetEvent<ModuleInitializedEvent>().Publish(this);
         }
 
         IEventAggregator _eventAggregator;
+        IUnityContainer _container;
     }
 }
