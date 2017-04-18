@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Modules.Exceptions", "Songhay.StudioFloor.Desktop.Modules.Exceptions\Songhay.StudioFloor.Desktop.Modules.Exceptions.csproj", "{35969094-79F7-47AF-BAC9-6D42B8875755}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove", "Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove\Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove.csproj", "{CA3F1023-7CA3-4E29-8214-6793A4484123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{35969094-79F7-47AF-BAC9-6D42B8875755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35969094-79F7-47AF-BAC9-6D42B8875755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35969094-79F7-47AF-BAC9-6D42B8875755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
