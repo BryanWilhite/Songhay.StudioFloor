@@ -7,7 +7,7 @@
     mc:Ignorable="d"
     d:DesignWidth="{x:Static rxSharedModels:AppScalars.ModuleWidth}" d:DesignHeight="{x:Static rxSharedModels:AppScalars.ModuleHeight}">
     <ItemsControl
-        ItemsSource="{Binding Index}"
+        ItemsSource="{Binding IndexCollectionView}"
         Style="{StaticResource IndexItemsControlStyle}"
         />
 </UserControl>
