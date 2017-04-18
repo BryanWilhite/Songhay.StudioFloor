@@ -1,7 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Events;
 using Prism.Modularity;
-using Prism.Regions;
 using Prism.Unity;
 using Songhay.Models;
 using Songhay.StudioFloor.Desktop.Common.Events;
