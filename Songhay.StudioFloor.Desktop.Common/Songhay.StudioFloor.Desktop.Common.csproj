@@ -88,6 +88,7 @@
     <Compile Include="..\Songhay.StudioFloor.Desktop\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Events\ModuleInitializedEvent.cs" />
     <Compile Include="Extensions\BindableBaseExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -46,6 +46,7 @@ namespace Songhay.StudioFloor.Desktop
         protected override DependencyObject CreateShell()
         {
             if (!FrameworkDispatcherUtility.HasCurrentWindowsApplication()) return null;
+
             return this.Container.Resolve<ClientView>();
         }
 
