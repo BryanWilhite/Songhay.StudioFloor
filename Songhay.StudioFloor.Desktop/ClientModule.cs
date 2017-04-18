@@ -21,7 +21,7 @@ namespace Songhay.StudioFloor.Desktop
             this._container.RegisterTypeForNavigation<IndexView>();
         }
 
-        IRegionManager _regionManager;
-        IUnityContainer _container;
+        readonly IRegionManager _regionManager;
+        readonly IUnityContainer _container;
     }
 }

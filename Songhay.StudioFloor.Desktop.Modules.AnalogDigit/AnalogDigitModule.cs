@@ -29,7 +29,7 @@ namespace Songhay.StudioFloor.Desktop.Modules
             this._eventAggregator.GetEvent<ModuleInitializedEvent>().Publish(this);
         }
 
-        IEventAggregator _eventAggregator;
-        IUnityContainer _container;
+        readonly IEventAggregator _eventAggregator;
+        readonly IUnityContainer _container;
     }
 }

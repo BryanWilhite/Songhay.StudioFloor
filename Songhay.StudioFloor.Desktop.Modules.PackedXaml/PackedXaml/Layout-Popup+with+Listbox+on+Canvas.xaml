@@ -1,0 +1,27 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Tag="Layout - Popup with Listbox on Canvas">
+    <Canvas>
+        <ToggleButton x:Name="MyButton" Canvas.Left="96" Canvas.Top="96" Width="128" Height="64">Show Popup</ToggleButton>
+        <Popup x:Name="MyPopup"
+            HorizontalOffset="96"
+            IsOpen="{Binding Path=IsChecked, ElementName=MyButton}"
+            VerticalOffset="160">
+            <!--
+                Silverlight has no Popup.Placement or Popup.PlacementTarget properties.
+                This is not working: HorizontalOffset="{Binding Path=(Canvas.Left), ElementName=MyButton}"
+            -->
+            <ListBox Width="{Binding Path=Width, ElementName=MyButton}">
+                <ListBoxItem Content="One" />
+                <ListBoxItem Content="Two" />
+                <ListBoxItem Content="---" />
+                <Separator />
+                <ListBoxItem Content="Three" />
+            </ListBox>
+        </Popup>
+    </Canvas>
+</UserControl>
