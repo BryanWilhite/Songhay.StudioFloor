@@ -32,7 +32,7 @@ namespace Songhay.StudioFloor.Desktop
                 //typeof(RestModelContextModule),
                 //typeof(RestWeatherModule),
                 typeof(AnalogDigitModule),
-                //typeof(ExceptionsModule),
+                typeof(ExceptionsModule),
                 //typeof(KennyYoungFluidMoveModule),
                 //typeof(ODataWeatherModule),
                 typeof(PackedXamlModule),

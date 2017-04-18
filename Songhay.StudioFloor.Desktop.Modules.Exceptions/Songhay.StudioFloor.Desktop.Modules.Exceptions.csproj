@@ -4,14 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25904C62-6BD0-4E75-AC37-0547ACAFA7E8}</ProjectGuid>
+    <ProjectGuid>{35969094-79F7-47AF-BAC9-6D42B8875755}</ProjectGuid>
     <OutputType>library</OutputType>
-    <RootNamespace>Songhay.StudioFloor.Desktop.Modules.PackedXaml</RootNamespace>
-    <AssemblyName>Songhay.StudioFloor.Desktop.Modules.PackedXaml</AssemblyName>
+    <RootNamespace>Songhay.StudioFloor.Desktop.Modules.Exceptions</RootNamespace>
+    <AssemblyName>Songhay.StudioFloor.Desktop.Modules.Exceptions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -87,7 +88,7 @@
     <Compile Include="..\Songhay.StudioFloor.Desktop\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="PackedXamlModule.cs" />
+    <Compile Include="ExceptionsModule.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,13 +99,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ViewModels\PackedXamlIndexViewModel.cs" />
-    <Compile Include="ViewModels\PackedXamlViewModel.cs" />
-    <Compile Include="Views\PackedXamlIndexView.xaml.cs">
-      <DependentUpon>PackedXamlIndexView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\PackedXamlView.xaml.cs">
-      <DependentUpon>PackedXamlView.xaml</DependentUpon>
+    <Compile Include="Views\ExceptionsView.xaml.cs">
+      <DependentUpon>ExceptionsView.xaml</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,135 +113,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="PackedXaml\Animation-Border+and+Rectangle+Color+and+Opacity.xaml">
+    <Page Include="Views\ExceptionsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Animation-Border+Style+Trigger.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Animation-Chris+Cavanaugh+Preloader.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Animation-Swapping+Visuals.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Binding-Slider+with+ElementName.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Blend+Interactions-GoToState+Action+and+VisualStateManager.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Blend+Interactions-Kenny+Young+and+FluidMoveBehavior.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Blend+Interactions-Kenny+Young+FluidMoveBehavior+and+WrapPanel.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Blend+Interactions-Mouse+and+DragElementBehavior.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Dr.+WPF-DataTemplate+with+ItemsControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Button+with+Custom+Content+on+Grid.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-DockPanel+with+WrapPanel.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Expander+and+Grid.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Grid+ContentControl+Strategy.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Grid+Strategy+with+Line+Elements+and+Border.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Grid+Strategy+with+Line+Elements.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Grid+Strategy.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-GridSplitter+Nested+in+StackPanel.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-GridSplitter+Resizing.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-MSDN+GridSplitter+Layout.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-Popup+with+Listbox+on+Canvas.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-StackPanel+DataForm.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Layout-ViewBox+ControlTemplate+with+Canvas.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\Styles-Simple+Example.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\xArray+and+ItemsControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\xArray+and+ListBox.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
-    <Resource Include="PackedXaml\xArray+and+TransitioningContentControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Resource>
+    </Page>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Common\Songhay.StudioFloor.Desktop.Common.csproj">
-      <Project>{229F22BC-03BE-4888-888A-C99168AB897F}</Project>
+      <Project>{229f22bc-03be-4888-888a-c99168ab897f}</Project>
       <Name>Songhay.StudioFloor.Desktop.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Songhay.StudioFloor.Shared\Songhay.StudioFloor.Shared.csproj">
       <Project>{84711e39-cb10-4758-9f52-d34878776281}</Project>
       <Name>Songhay.StudioFloor.Shared</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Views\PackedXamlIndexView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\PackedXamlView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

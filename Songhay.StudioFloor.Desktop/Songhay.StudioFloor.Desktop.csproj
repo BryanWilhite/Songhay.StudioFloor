@@ -167,6 +167,10 @@
       <Project>{82d3b021-2e38-42c2-a1b9-86bbec1e53f5}</Project>
       <Name>Songhay.StudioFloor.Desktop.Modules.AnalogDigit</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.Exceptions\Songhay.StudioFloor.Desktop.Modules.Exceptions.csproj">
+      <Project>{35969094-79f7-47af-bac9-6d42b8875755}</Project>
+      <Name>Songhay.StudioFloor.Desktop.Modules.Exceptions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.PackedXaml\Songhay.StudioFloor.Desktop.Modules.PackedXaml.csproj">
       <Project>{25904c62-6bd0-4e75-ac37-0547acafa7e8}</Project>
       <Name>Songhay.StudioFloor.Desktop.Modules.PackedXaml</Name>
