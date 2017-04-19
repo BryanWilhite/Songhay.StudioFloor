@@ -28,7 +28,7 @@ namespace Songhay.StudioFloor.Desktop
                 //typeof(ODataWeatherModule),
                 typeof(PackedXamlModule),
                 typeof(SvgFontsModule),
-                //typeof(ValidationModule),
+                typeof(ValidationModule),
             };
 
             moduleTypes.ForEachInEnumerable(i => catalog.AddModule(i));

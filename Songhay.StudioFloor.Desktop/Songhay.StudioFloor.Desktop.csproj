@@ -127,6 +127,10 @@
       <HintPath>..\packages\SonghayCore.1.6.7\lib\net461\SonghayCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.3.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Reflection.Context" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -234,6 +238,10 @@
     <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.SvgFonts\Songhay.StudioFloor.Desktop.Modules.SvgFonts.csproj">
       <Project>{93712f5b-30c5-4508-9f09-fb317a8d7eb0}</Project>
       <Name>Songhay.StudioFloor.Desktop.Modules.SvgFonts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.Validation\Songhay.StudioFloor.Desktop.Modules.Validation.csproj">
+      <Project>{5bde93b1-a7e1-4e8a-8356-5d5d6331672d}</Project>
+      <Name>Songhay.StudioFloor.Desktop.Modules.Validation</Name>
     </ProjectReference>
     <ProjectReference Include="..\Songhay.StudioFloor.Shared\Songhay.StudioFloor.Shared.csproj">
       <Project>{84711e39-cb10-4758-9f52-d34878776281}</Project>
