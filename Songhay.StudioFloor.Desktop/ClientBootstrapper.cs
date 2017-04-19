@@ -20,12 +20,9 @@ namespace Songhay.StudioFloor.Desktop
 
             var moduleTypes = new List<Type> {
                 typeof(ClientModule),
-                //typeof(RestModelContextModule),
-                //typeof(RestWeatherModule),
                 typeof(AnalogDigitModule),
                 typeof(ExceptionsModule),
                 typeof(KennyYoungFluidMoveModule),
-                //typeof(ODataWeatherModule),
                 typeof(PackedXamlModule),
                 typeof(SvgFontsModule),
                 typeof(ValidationModule),

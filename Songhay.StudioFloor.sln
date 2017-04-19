@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Modules.Validation", "Songhay.StudioFloor.Desktop.Modules.Validation\Songhay.StudioFloor.Desktop.Modules.Validation.csproj", "{5BDE93B1-A7E1-4E8A-8356-5D5D6331672D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Tests", "Songhay.StudioFloor.Desktop.Tests\Songhay.StudioFloor.Desktop.Tests.csproj", "{B9B8638F-A3E3-4C23-8B93-D550AE4E42A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{5BDE93B1-A7E1-4E8A-8356-5D5D6331672D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BDE93B1-A7E1-4E8A-8356-5D5D6331672D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BDE93B1-A7E1-4E8A-8356-5D5D6331672D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B8638F-A3E3-4C23-8B93-D550AE4E42A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B8638F-A3E3-4C23-8B93-D550AE4E42A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B8638F-A3E3-4C23-8B93-D550AE4E42A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B8638F-A3E3-4C23-8B93-D550AE4E42A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
