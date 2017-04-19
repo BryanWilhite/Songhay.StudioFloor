@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove", "Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove\Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove.csproj", "{CA3F1023-7CA3-4E29-8214-6793A4484123}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.StudioFloor.Desktop.Modules.SvgFonts", "Songhay.StudioFloor.Desktop.Modules.SvgFonts\Songhay.StudioFloor.Desktop.Modules.SvgFonts.csproj", "{93712F5B-30C5-4508-9F09-FB317A8D7EB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA3F1023-7CA3-4E29-8214-6793A4484123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93712F5B-30C5-4508-9F09-FB317A8D7EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93712F5B-30C5-4508-9F09-FB317A8D7EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93712F5B-30C5-4508-9F09-FB317A8D7EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93712F5B-30C5-4508-9F09-FB317A8D7EB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

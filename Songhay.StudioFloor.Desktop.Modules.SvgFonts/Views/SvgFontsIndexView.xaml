@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Songhay.StudioFloor.Desktop.Modules.SvgFonts.Views.SvgFontsIndexView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d"
+    xmlns:prism="http://prismlibrary.com/"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    xmlns:rxSharedModels="clr-namespace:Songhay.StudioFloor.Shared.Models;assembly=Songhay.StudioFloor.Shared"
+    d:DesignWidth="{x:Static rxSharedModels:AppScalars.ModuleWidth}" d:DesignHeight="{x:Static rxSharedModels:AppScalars.ModuleHeight}">
+    <ItemsControl
+        ItemsSource="{Binding Index}"
+        Style="{StaticResource IndexItemsControlStyle}"
+        />
+</UserControl>

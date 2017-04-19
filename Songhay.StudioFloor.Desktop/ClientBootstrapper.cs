@@ -18,15 +18,6 @@ namespace Songhay.StudioFloor.Desktop
         {
             var catalog = this.ModuleCatalog as ModuleCatalog;
 
-            //#region builders:
-
-            //var rflContextForRest = new RegistrationBuilder();
-            //rflContextForRest
-            //    .ForTypesDerivedFrom<IRestModelContextService>()
-            //    .Export<IRestModelContextService>();
-
-            //#endregion
-
             var moduleTypes = new List<Type> {
                 typeof(ClientModule),
                 //typeof(RestModelContextModule),
@@ -36,7 +27,7 @@ namespace Songhay.StudioFloor.Desktop
                 typeof(KennyYoungFluidMoveModule),
                 //typeof(ODataWeatherModule),
                 typeof(PackedXamlModule),
-                //typeof(SvgFontsModule),
+                typeof(SvgFontsModule),
                 //typeof(ValidationModule),
             };
 

@@ -231,6 +231,10 @@
       <Project>{25904c62-6bd0-4e75-ac37-0547acafa7e8}</Project>
       <Name>Songhay.StudioFloor.Desktop.Modules.PackedXaml</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.SvgFonts\Songhay.StudioFloor.Desktop.Modules.SvgFonts.csproj">
+      <Project>{93712f5b-30c5-4508-9f09-fb317a8d7eb0}</Project>
+      <Name>Songhay.StudioFloor.Desktop.Modules.SvgFonts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Songhay.StudioFloor.Shared\Songhay.StudioFloor.Shared.csproj">
       <Project>{84711e39-cb10-4758-9f52-d34878776281}</Project>
       <Name>Songhay.StudioFloor.Shared</Name>
