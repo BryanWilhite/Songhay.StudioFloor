@@ -78,7 +78,7 @@
       <HintPath>..\packages\SonghayCore.1.6.7\lib\net461\SonghayCore.dll</HintPath>
     </Reference>
     <Reference Include="SonghayCore.MSTest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SonghayCore.MSTest.1.0.1\lib\net452\SonghayCore.MSTest.dll</HintPath>
+      <HintPath>..\packages\SonghayCore.MSTest.1.0.2\lib\net452\SonghayCore.MSTest.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,48 +88,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ClientBootstrapperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Common\Songhay.StudioFloor.Desktop.Common.csproj">
-      <Project>{229f22bc-03be-4888-888a-c99168ab897f}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.AnalogDigit\Songhay.StudioFloor.Desktop.Modules.AnalogDigit.csproj">
-      <Project>{82d3b021-2e38-42c2-a1b9-86bbec1e53f5}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Modules.AnalogDigit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.Exceptions\Songhay.StudioFloor.Desktop.Modules.Exceptions.csproj">
-      <Project>{35969094-79f7-47af-bac9-6d42b8875755}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Modules.Exceptions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove\Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove.csproj">
-      <Project>{ca3f1023-7ca3-4e29-8214-6793a4484123}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.PackedXaml\Songhay.StudioFloor.Desktop.Modules.PackedXaml.csproj">
-      <Project>{25904c62-6bd0-4e75-ac37-0547acafa7e8}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Modules.PackedXaml</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.SvgFonts\Songhay.StudioFloor.Desktop.Modules.SvgFonts.csproj">
-      <Project>{93712f5b-30c5-4508-9f09-fb317a8d7eb0}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Modules.SvgFonts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Desktop.Modules.Validation\Songhay.StudioFloor.Desktop.Modules.Validation.csproj">
-      <Project>{5bde93b1-a7e1-4e8a-8356-5d5d6331672d}</Project>
-      <Name>Songhay.StudioFloor.Desktop.Modules.Validation</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Songhay.StudioFloor.Desktop\Songhay.StudioFloor.Desktop.csproj">
       <Project>{3b6c5bbc-17b0-403d-b3bb-20f3f2f1dd9f}</Project>
       <Name>Songhay.StudioFloor.Desktop</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Songhay.StudioFloor.Shared\Songhay.StudioFloor.Shared.csproj">
-      <Project>{84711e39-cb10-4758-9f52-d34878776281}</Project>
-      <Name>Songhay.StudioFloor.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
