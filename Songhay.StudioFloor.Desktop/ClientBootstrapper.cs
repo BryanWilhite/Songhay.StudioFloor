@@ -1,8 +1,11 @@
 ﻿using Microsoft.Practices.Unity;
+using Prism.Events;
 using Prism.Modularity;
 using Prism.Regions;
 using Prism.Unity;
 using Songhay.Extensions;
+using Songhay.Models;
+using Songhay.Mvvm.Models;
 using Songhay.StudioFloor.Desktop.Modules;
 using Songhay.StudioFloor.Desktop.Views;
 using Songhay.StudioFloor.Shared.Models;
@@ -40,6 +43,8 @@ namespace Songhay.StudioFloor.Desktop
 
         protected override void InitializeModules()
         {
+            this.Container.RegisterInstance(typeof(PubSubEvent<DisplayItemModel>), CorePrismEvents.DisplayItemModelEvent);
+
             base.InitializeModules();
 
             var regionManager = this.Container.Resolve<IRegionManager>();

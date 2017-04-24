@@ -5,7 +5,6 @@ using Prism.Regions;
 using Songhay.Models;
 using Songhay.Mvvm.Extensions;
 using Songhay.Mvvm.ViewModels;
-using Songhay.StudioFloor.Desktop.Common.Events;
 using Songhay.StudioFloor.Desktop.Common.Extensions;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -42,7 +41,7 @@ namespace Songhay.StudioFloor.Desktop.ViewModels
         {
             this._index = new ObservableCollection<DisplayItemModel>();
             eventAggregator
-                .GetEvent<ModuleInitializedEvent>()
+                .GetEvent<PubSubEvent<DisplayItemModel>>()
                 .Subscribe(displayItem => this._index.Add(displayItem));
         }
 
