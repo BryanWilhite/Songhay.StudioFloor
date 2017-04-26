@@ -120,8 +120,8 @@
     <Reference Include="Songhay.Desktop.Controls.AnalogDigit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Desktop.Controls.AnalogDigit.1.0.0\lib\net461\Songhay.Desktop.Controls.AnalogDigit.dll</HintPath>
     </Reference>
-    <Reference Include="Songhay.Mvvm, Version=1.0.0.40273, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.2.0.1\lib\net461\Songhay.Mvvm.dll</HintPath>
+    <Reference Include="Songhay.Mvvm, Version=1.0.0.26165, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Songhay.Mvvm.2.1.0\lib\net461\Songhay.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="SonghayCore, Version=1.0.0.42118, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SonghayCore.1.6.7\lib\net461\SonghayCore.dll</HintPath>

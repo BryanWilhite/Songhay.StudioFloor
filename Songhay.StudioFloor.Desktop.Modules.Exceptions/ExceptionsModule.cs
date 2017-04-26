@@ -3,6 +3,7 @@ using Prism.Events;
 using Prism.Modularity;
 using Prism.Unity;
 using Songhay.Models;
+using Songhay.Mvvm.Models;
 using Songhay.StudioFloor.Desktop.Modules.Exceptions.Views;
 using System;
 
@@ -28,7 +29,7 @@ namespace Songhay.StudioFloor.Desktop.Modules
         {
             this._container.RegisterTypeForNavigation<ExceptionsView>();
 
-            this._eventAggregator.GetEvent<PubSubEvent<DisplayItemModel>>().Publish(this);
+            this._eventAggregator.GetEvent<DisplayItemModelEvent>().Publish(this);
         }
 
         readonly IUnityContainer _container;
