@@ -25,9 +25,6 @@ namespace Songhay.StudioFloor.Desktop.Tests
         [TestMethod]
         public void ShouldConfigureModuleCatalog()
         {
-            var projectsFolder = this.TestContext.ShouldGetSolutionFolder(this.GetType());
-            this.TestContext.ShouldFindFolder(projectsFolder);
-
             var bootstrapper = new ClientBootstrapper();
             bootstrapper.Run();
 
