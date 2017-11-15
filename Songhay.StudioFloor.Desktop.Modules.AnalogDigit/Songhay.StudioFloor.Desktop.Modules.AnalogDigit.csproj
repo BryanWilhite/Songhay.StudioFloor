@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLocator, Version=2.0.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.2.0.1\lib\net45\CommonServiceLocator.dll</HintPath>
+    <Reference Include="CommonServiceLocator, Version=1.4.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.4.0\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
@@ -61,8 +61,8 @@
     <Reference Include="Songhay.Desktop.Controls.AnalogDigit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Desktop.Controls.AnalogDigit.1.0.0\lib\net461\Songhay.Desktop.Controls.AnalogDigit.dll</HintPath>
     </Reference>
-    <Reference Include="Songhay.Mvvm, Version=1.0.0.22102, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.2.2.1\lib\net461\Songhay.Mvvm.dll</HintPath>
+    <Reference Include="Songhay.Mvvm, Version=1.0.0.23516, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Songhay.Mvvm.2.2.0\lib\net461\Songhay.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="SonghayCore, Version=1.0.0.31976, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SonghayCore.2.5.2\lib\net461\SonghayCore.dll</HintPath>
