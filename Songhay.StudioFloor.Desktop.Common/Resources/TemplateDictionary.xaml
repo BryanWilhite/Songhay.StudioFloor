@@ -5,11 +5,10 @@
     xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls">
     <DataTemplate x:Key="IndexItemTemplate" DataType="coreModels:DisplayItemModel">
         <mah:Tile
+            Title="{Binding DisplayText}"
             Command="{Binding DataContext.ClientContentRegionNavigation.NavigationCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}"
             CommandParameter="{Binding ResourceIndicator.OriginalString}"
-            Title="{Binding DisplayText}"
-            ToolTip="{Binding Description}">
-        </mah:Tile>
+            ToolTip="{Binding Description}" />
     </DataTemplate>
     <ItemsPanelTemplate x:Key="IndexItemsPanel">
         <WrapPanel />
