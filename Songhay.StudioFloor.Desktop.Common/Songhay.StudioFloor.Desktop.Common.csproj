@@ -62,8 +62,8 @@
     <Reference Include="Songhay, Version=2.0.0.31974, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SonghayCore.2.5.2\lib\net461\Songhay.dll</HintPath>
     </Reference>
-    <Reference Include="Songhay.Mvvm, Version=1.0.0.23516, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Songhay.Mvvm.2.2.0\lib\net461\Songhay.Mvvm.dll</HintPath>
+    <Reference Include="Songhay.Mvvm, Version=1.0.0.26563, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Songhay.Mvvm.2.2.3\lib\net461\Songhay.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="SonghayCore, Version=1.0.0.31976, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SonghayCore.2.5.2\lib\net461\SonghayCore.dll</HintPath>
