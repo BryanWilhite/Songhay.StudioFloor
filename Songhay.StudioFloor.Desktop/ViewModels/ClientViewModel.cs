@@ -1,4 +1,4 @@
-﻿using Microsoft.Practices.ServiceLocation;
+﻿using CommonServiceLocator;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
