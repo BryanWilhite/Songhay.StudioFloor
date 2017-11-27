@@ -59,14 +59,14 @@
     <Reference Include="Prism.Wpf, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
       <HintPath>..\packages\Prism.Wpf.6.3.0\lib\net45\Prism.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="Songhay, Version=2.0.0.31974, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SonghayCore.2.5.2\lib\net461\Songhay.dll</HintPath>
+    <Reference Include="Songhay, Version=2.0.0.41815, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SonghayCore.2.5.4\lib\net461\Songhay.dll</HintPath>
     </Reference>
     <Reference Include="Songhay.Mvvm, Version=1.0.0.26563, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Mvvm.2.2.3\lib\net461\Songhay.Mvvm.dll</HintPath>
     </Reference>
-    <Reference Include="SonghayCore, Version=1.0.0.31976, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SonghayCore.2.5.2\lib\net461\SonghayCore.dll</HintPath>
+    <Reference Include="SonghayCore, Version=1.0.0.41818, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SonghayCore.2.5.4\lib\net461\SonghayCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
