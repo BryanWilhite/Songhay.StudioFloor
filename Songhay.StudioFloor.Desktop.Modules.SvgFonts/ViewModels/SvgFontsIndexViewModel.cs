@@ -1,4 +1,4 @@
-﻿using CommonServiceLocator;
+﻿using Microsoft.Practices.ServiceLocation;
 using Prism.Mvvm;
 using Prism.Regions;
 using Songhay.Models;
