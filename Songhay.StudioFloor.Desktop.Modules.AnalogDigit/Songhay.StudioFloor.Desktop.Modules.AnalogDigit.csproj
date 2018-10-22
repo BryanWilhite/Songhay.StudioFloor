@@ -55,8 +55,8 @@
     <Reference Include="Prism.Wpf, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
       <HintPath>..\packages\Prism.Wpf.6.3.0\lib\net45\Prism.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="Songhay, Version=2.0.0.28919, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SonghayCore.2.8.4\lib\net461\Songhay.dll</HintPath>
+    <Reference Include="Songhay, Version=2.0.0.75, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SonghayCore.2.8.7\lib\net461\Songhay.dll</HintPath>
     </Reference>
     <Reference Include="Songhay.Desktop.Controls.AnalogDigit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Desktop.Controls.AnalogDigit.1.0.0\lib\net461\Songhay.Desktop.Controls.AnalogDigit.dll</HintPath>
@@ -64,8 +64,8 @@
     <Reference Include="Songhay.Mvvm, Version=1.0.0.17040, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Songhay.Mvvm.2.2.4\lib\net461\Songhay.Mvvm.dll</HintPath>
     </Reference>
-    <Reference Include="SonghayCore, Version=1.0.0.28920, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SonghayCore.2.8.4\lib\net461\SonghayCore.dll</HintPath>
+    <Reference Include="SonghayCore, Version=1.0.0.76, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SonghayCore.2.8.7\lib\net461\SonghayCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
