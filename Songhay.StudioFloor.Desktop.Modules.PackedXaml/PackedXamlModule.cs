@@ -1,7 +1,6 @@
-﻿using Microsoft.Practices.Unity;
-using Prism.Events;
+﻿using Prism.Events;
+using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Unity;
 using Songhay.Models;
 using Songhay.Mvvm.Models;
 using Songhay.StudioFloor.Desktop.Modules.PackedXaml.Views;
@@ -9,11 +8,19 @@ using System;
 
 namespace Songhay.StudioFloor.Desktop.Modules
 {
+    /// <summary>
+    /// Prism Module
+    /// </summary>
+    /// <seealso cref="Songhay.Models.DisplayItemModel" />
+    /// <seealso cref="Prism.Modularity.IModule" />
     public class PackedXamlModule : DisplayItemModel, IModule
     {
-        public PackedXamlModule(IUnityContainer container, IEventAggregator eventAggregator)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PackedXamlModule"/> class.
+        /// </summary>
+        /// <param name="eventAggregator">The event aggregator.</param>
+        public PackedXamlModule(IEventAggregator eventAggregator)
         {
-            this._container = container;
             this._eventAggregator = eventAggregator;
 
             this.Description = "Page-compiled XAML-only samples.";
@@ -22,15 +29,25 @@ namespace Songhay.StudioFloor.Desktop.Modules
             this.ResourceIndicator = new Uri(this.ItemName, UriKind.Relative);
         }
 
-        public void Initialize()
+        /// <summary>
+        /// Used to register types with the container that will be used by your application.
+        /// </summary>
+        /// <param name="containerRegistry"></param>
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            this._container.RegisterTypeForNavigation<PackedXamlIndexView>();
-            this._container.RegisterTypeForNavigation<PackedXamlView>();
+            containerRegistry.RegisterForNavigation<PackedXamlIndexView>();
+            containerRegistry.RegisterForNavigation<PackedXamlView>();
+        }
 
+        /// <summary>
+        /// Notifies the module that it has be initialized.
+        /// </summary>
+        /// <param name="containerProvider"></param>
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
             this._eventAggregator.GetEvent<DisplayItemModelEvent>().Publish(this);
         }
 
-        readonly IUnityContainer _container;
         readonly IEventAggregator _eventAggregator;
     }
 }

@@ -1,7 +1,6 @@
-﻿using Microsoft.Practices.Unity;
-using Prism.Events;
+﻿using Prism.Events;
+using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Unity;
 using Songhay.Models;
 using Songhay.Mvvm.Models;
 using Songhay.StudioFloor.Desktop.Modules.KennyYoungFluidMove.Views;
@@ -17,9 +16,8 @@ namespace Songhay.StudioFloor.Desktop.Modules
         /// <summary>
         /// Initializes a new instance of the <see cref="KennyYoungFluidMoveModule"/> class.
         /// </summary>
-        public KennyYoungFluidMoveModule(IUnityContainer container, IEventAggregator eventAggregator)
+        public KennyYoungFluidMoveModule(IEventAggregator eventAggregator)
         {
-            this._container = container;
             this._eventAggregator = eventAggregator;
 
             this.Description = "The Expression Blend SDK Fluid Move Behavior from Blend Architect Kenny Young.";
@@ -29,16 +27,23 @@ namespace Songhay.StudioFloor.Desktop.Modules
         }
 
         /// <summary>
-        /// Notifies the module that it has been initialized.
+        /// Used to register types with the container that will be used by your application.
         /// </summary>
-        public void Initialize()
+        /// <param name="containerRegistry"></param>
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            this._container.RegisterTypeForNavigation<KennyYoungFluidMoveView>();
+            containerRegistry.RegisterForNavigation<KennyYoungFluidMoveView>();
+        }
 
+        /// <summary>
+        /// Notifies the module that it has be initialized.
+        /// </summary>
+        /// <param name="containerProvider"></param>
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
             this._eventAggregator.GetEvent<DisplayItemModelEvent>().Publish(this);
         }
 
-        readonly IUnityContainer _container;
         readonly IEventAggregator _eventAggregator;
     }
 }

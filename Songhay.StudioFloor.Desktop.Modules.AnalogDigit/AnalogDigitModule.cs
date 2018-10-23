@@ -1,7 +1,6 @@
-﻿using Microsoft.Practices.Unity;
-using Prism.Events;
+﻿using Prism.Events;
+using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Unity;
 using Songhay.Models;
 using Songhay.Mvvm.Models;
 using Songhay.StudioFloor.Desktop.Modules.AnalogDigit.Views;
@@ -9,12 +8,20 @@ using System;
 
 namespace Songhay.StudioFloor.Desktop.Modules
 {
+    /// <summary>
+    /// Prism Module
+    /// </summary>
+    /// <seealso cref="Songhay.Models.DisplayItemModel" />
+    /// <seealso cref="Prism.Modularity.IModule" />
     public class AnalogDigitModule : DisplayItemModel, IModule
     {
-        public AnalogDigitModule(IUnityContainer container, IEventAggregator eventAggregator)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AnalogDigitModule"/> class.
+        /// </summary>
+        /// <param name="eventAggregator">The event aggregator.</param>
+        public AnalogDigitModule(IEventAggregator eventAggregator)
         {
             this._eventAggregator = eventAggregator;
-            this._container = container;
 
             this.Description = "The Analog Digit Control sample.";
             this.DisplayText = "Songhay Analog Digit";
@@ -22,14 +29,24 @@ namespace Songhay.StudioFloor.Desktop.Modules
             this.ResourceIndicator = new Uri(this.ItemName, UriKind.Relative);
         }
 
-        public void Initialize()
+        /// <summary>
+        /// Used to register types with the container that will be used by your application.
+        /// </summary>
+        /// <param name="containerRegistry"></param>
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            this._container.RegisterTypeForNavigation<AnalogDigitView>();
+            containerRegistry.RegisterForNavigation<AnalogDigitView>();
+        }
 
+        /// <summary>
+        /// Notifies the module that it has be initialized.
+        /// </summary>
+        /// <param name="containerProvider"></param>
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
             this._eventAggregator.GetEvent<DisplayItemModelEvent>().Publish(this);
         }
 
         readonly IEventAggregator _eventAggregator;
-        readonly IUnityContainer _container;
     }
 }

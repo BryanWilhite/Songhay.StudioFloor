@@ -1,27 +1,44 @@
-﻿using Microsoft.Practices.Unity;
+﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using Prism.Unity;
 using Songhay.StudioFloor.Desktop.Views;
 
 namespace Songhay.StudioFloor.Desktop
 {
+    /// <summary>
+    /// Prism Module
+    /// </summary>
+    /// <seealso cref="Prism.Modularity.IModule" />
     public class ClientModule: IModule
     {
-        public ClientModule(RegionManager regionManager, IUnityContainer container)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ClientModule"/> class.
+        /// </summary>
+        /// <param name="regionManager">The region manager.</param>
+        public ClientModule(RegionManager regionManager)
         {
             this._regionManager = regionManager;
-            this._container = container;
         }
 
-        public void Initialize()
+        /// <summary>
+        /// Used to register types with the container that will be used by your application.
+        /// </summary>
+        /// <param name="containerRegistry"></param>
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            this._container.RegisterTypeForNavigation<AboutView>();
-            this._container.RegisterTypeForNavigation<ClientView>();
-            this._container.RegisterTypeForNavigation<IndexView>();
+            containerRegistry.RegisterForNavigation<AboutView>();
+            containerRegistry.RegisterForNavigation<ClientView>();
+            containerRegistry.RegisterForNavigation<IndexView>();
+        }
+
+        /// <summary>
+        /// Notifies the module that it has be initialized.
+        /// </summary>
+        /// <param name="containerProvider"></param>
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
         }
 
         readonly IRegionManager _regionManager;
-        readonly IUnityContainer _container;
     }
 }

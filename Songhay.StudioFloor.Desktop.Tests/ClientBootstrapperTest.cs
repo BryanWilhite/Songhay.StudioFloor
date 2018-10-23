@@ -1,5 +1,4 @@
-﻿using Microsoft.Practices.Unity;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Prism.Events;
 using Prism.Modularity;
 using Songhay.Extensions;
@@ -25,16 +24,17 @@ namespace Songhay.StudioFloor.Desktop.Tests
         [TestMethod]
         public void ShouldConfigureModuleCatalog()
         {
-            var bootstrapper = new ClientBootstrapper();
-            bootstrapper.Run();
+            var app = new App();
+            app.Run();
 
-            Assert.IsNotNull(bootstrapper.Container, "The expected IoC container is not here.");
+            Assert.IsNotNull(app.Container, "The expected IoC container is not here.");
 
-            var eventAggregator = bootstrapper.Container.Resolve<IEventAggregator>();
+            var eventAggregator = app.Container.Resolve(typeof(IEventAggregator));
             Assert.IsNotNull(eventAggregator, "The expected Prism Event Aggregator is not here.");
 
-            var catalog = bootstrapper.Container.Resolve<IModuleCatalog>();
+            var catalog = app.Container.Resolve(typeof(IModuleCatalog)) as IModuleCatalog;
             Assert.IsNotNull(catalog, "The expected Prism Module Catalog is not here.");
+
             Assert.IsNotNull(catalog.Modules, "The expected Prism Module catalogs are not here.");
             Assert.IsTrue(catalog.Modules.Any(), "The expected Prism Module catalogs are not here.");
 

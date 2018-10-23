@@ -1,4 +1,4 @@
-﻿using Microsoft.Practices.ServiceLocation;
+﻿using CommonServiceLocator;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -22,10 +22,7 @@ namespace Songhay.StudioFloor.Desktop.ViewModels
             this.SetupIndexWithEventing(eventAggregator);
         }
 
-        public RegionNavigationViewModel ClientContentRegionNavigation
-        {
-            get { return this._clientContentRegionNavigation; }
-        }
+        public RegionNavigationViewModel ClientContentRegionNavigation { get; private set; }
 
         public ICollectionView IndexCollectionView
         {
@@ -49,12 +46,11 @@ namespace Songhay.StudioFloor.Desktop.ViewModels
         void SetupRegionNavigation()
         {
             this._regionManager = ServiceLocator.Current.GetInstance<IRegionManager>();
-            this._clientContentRegionNavigation = this.GetClientContentRegionNavigation(this._regionManager);
+            this.ClientContentRegionNavigation = this.GetClientContentRegionNavigation(this._regionManager);
         }
 
         CollectionViewSource _indexViewSource;
         IRegionManager _regionManager;
         ObservableCollection<DisplayItemModel> _index;
-        RegionNavigationViewModel _clientContentRegionNavigation;
     }
 }
