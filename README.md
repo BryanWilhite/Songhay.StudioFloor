@@ -4,7 +4,7 @@ Note: on CodePlex, this project was called [Songhay BiggestBox](https://wpfbigge
 
 This project is a self-instructional collection showcasing several Microsoft-based desktop technologies and industry-wide techniques including:
 
-* The open source version of [Prism](https://github.com/PrismLibrary/Prism) (6.x), maintained by [Brian Lagunas](http://brianlagunas.com/), [Brian Noyes](http://briannoyes.net/) and [Bart Lannoeye](http://www.bartlannoeye.com/blog)
+* The open source version of [Prism](https://github.com/PrismLibrary/Prism) (7.x), maintained by [Brian Lagunas](http://brianlagunas.com/), [Brian Noyes](http://briannoyes.net/) and [Bart Lannoeye](http://www.bartlannoeye.com/blog)
 * The [Unity](https://github.com/unitycontainer/unity) IoC Container under [Unity for Prism](https://www.nuget.org/packages/Prism.Unity/)
 * Cross-Platform Development with [.NET Standard](https://docs.microsoft.com/en-us/dotnet/articles/standard/library)
 * [mahapps.metro, a UI toolkit for WPF](http://mahapps.com/)
